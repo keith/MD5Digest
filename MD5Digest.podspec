@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "MD5Digest"
   s.version      = "0.1.0"
-  s.summary      = "An Objective-C NSString category for MD5 hex digests"
+  s.summary      = "An Objective-C NSString category for MD5 hex digests."
   s.homepage     = "https://github.com/Keithbsmiley/MD5Digest"
   s.license      = 'MIT'
   s.author       = { "Keith Smiley" => "keithbsmiley@gmail.com" }
