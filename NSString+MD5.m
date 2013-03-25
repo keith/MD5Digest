@@ -5,8 +5,8 @@
 //  Copyright (c) 2013 Keith Smiley. All rights reserved.
 //
 
-#import "NSString+MD5.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "NSString+MD5.h"
 
 @implementation NSString (MD5)
 
