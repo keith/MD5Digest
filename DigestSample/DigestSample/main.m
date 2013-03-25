@@ -14,7 +14,7 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         NSString *name = @"Keith Smiley";
         NSString *digest = [name MD5Digest];
-        NSLog(@"Digest: %@", digest);
+        printf("Digest: %s", [digest UTF8String]);
     }
 
     return 0;
