@@ -15,7 +15,7 @@ NSString *digest = [someString MD5Digest];
 Using CocoaPods:
 
 ```
-pod 'NSString+MD5.h'
+pod 'MD5Digest'
 ```
 
 Otherwise just include `NSString+MD5.{h,m}` in your project.
