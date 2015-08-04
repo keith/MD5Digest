@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Keithbsmiley/MD5Digest.git", :tag => s.version.to_s }
   s.source_files = 'NSString+MD5.{h,m}'
   s.requires_arc = true
+  s.platform     = :ios
+  s.platform     = :osx
 end
-
