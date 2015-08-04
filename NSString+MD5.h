@@ -5,6 +5,8 @@
 //  Copyright (c) 2013 Keith Smiley. All rights reserved.
 //
 
+@import Foundation;
+
 @interface NSString (MD5)
 
 - (NSString *)MD5Digest;

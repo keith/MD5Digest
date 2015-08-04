@@ -214,6 +214,7 @@
 		C22443291700E2500017DD9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigestSample/DigestSample-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -223,6 +224,7 @@
 		C224432A1700E2500017DD9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DigestSample/DigestSample-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
