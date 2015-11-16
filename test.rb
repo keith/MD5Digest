@@ -6,26 +6,10 @@ require 'digest/md5'
 NAME = "Keith Smiley"
 PROJECT_NAME = "DigestSample"
 
-def folder_missing(path)
-  puts "#{ path } doesn't exist where it should."
-  exit
-end
+Dir.chdir(PROJECT_NAME)
+`xcodebuild 2> /dev/null`
 
-def release_path
-  "#{ PROJECT_NAME }/build/Release"
-end
-
-if !File.directory? PROJECT_NAME
-  folder_missing(PROJECT_NAME)
-end
-
-%x[cd "#{ PROJECT_NAME }"; xcodebuild > /dev/null]
-
-if !File.directory? release_path
-  folder_missing(release_path)
-end
-
-Dir.chdir(release_path)
+Dir.chdir("build/Release")
 output = %x["./#{ PROJECT_NAME }"]
 output_digest = (output.split('Digest: ')).last
 
@@ -35,5 +19,6 @@ if output_digest == ruby_digest
   puts "SUCCESS: The generated digest matches Ruby's digest"
 else
   puts "ERROR: The generated digest does not match Ruby's digest"
+  exit 1
 end
 
